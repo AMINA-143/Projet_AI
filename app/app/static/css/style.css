@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e6;
+    color: #333;
+    scroll-behavior: smooth;
+    animation: fadeInBody 1s ease-in;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav {
+    background-color: #4d724d;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f0c929;
+    transform: scale(1.1);
+}
+
+header {
+    text-align: center;
+    background-color: #f0c929;
+    padding: 40px 0;
+    animation: fadeIn 1.5s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeInMain 1.5s ease;
+}
+
+@keyframes fadeInMain {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #1e3d59;
+    animation: fadeInTitle 1s ease;
+}
+
+@keyframes fadeInTitle {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+footer {
+    text-align: center;
+    background-color: #4d724d;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in;
+}
+
+button {
+    background-color: #1e3d59;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #163147;
+    transform: translateY(-2px);
+}
+
+input[type="file"] {
+    margin-top: 20px;
+    display: block;
+}
+
+/* Loader circulaire */
+.loader {
+    margin: 20px auto;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #1e3d59;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 20px;
+        margin: 15px;
+    }
+    button {
+        width: 100%;
+    }
+}
+.image-header {
+    background-image: url("../images/drought.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.image-header .overlay {
+    background-color: rgba(218 189 100 / 64%);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}

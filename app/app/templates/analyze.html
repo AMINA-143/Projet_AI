@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyse - DroughtXplore</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="image-header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            z-index: 10;
+            margin: 0;
+            padding: 0;
+        ">
+
+        <div class="overlay">
+            <h1 style="color: #4d724d; text-shadow: 0 0 1px #dddddd, 0 0 2px #dddddd;"><i class="fas fa-fire"></i> Analyse</h1>
+            <p>Importez votre image satellite pour évaluer la sécheresse</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/analyze">Traitement d'image</a>
+        <a href="/about">Qui sommes-nous</a>
+    </nav>
+
+    <main>
+        <form method="post" enctype="multipart/form-data">
+            <label for="image">Sélectionnez une image satellite :</label><br>
+            <input type="file" name="image" required><br>
+            <button type="submit">Analyser</button>
+        </form>
+
+        {% if image %}
+        <section>
+            <h2>Image importée :</h2>
+            <img src="{{ url_for('uploaded_file', filename=image) }}" alt="Image importée" style="max-width: 100%; margin-top: 20px;">
+
+            {% if result %}
+                <h2 style="color: #1e3d59;">Résultat de l’analyse :</h2>
+                <p style="font-size: 1.2em; font-weight: bold;">{{ result }}</p>
+            {% endif %}
+
+            <br><br>
+            <a href="{{ url_for('static', filename='results/map_result.png') }}" download>
+                <button>Télécharger le rapport</button>
+            </a>
+        </section>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p><i class="fas fa-envelope"></i> Contact : contact.droughtXplore@gmail.com | © 2025 DroughtXplore</p>
+    </footer>
+</body>
+</html>

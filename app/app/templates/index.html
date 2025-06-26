@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - DroughtXplore</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="image-header">
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 10;
+    margin: 0;
+    padding: 0;">
+
+        <div class="overlay">
+            <h1 style="color: #4d724d; text-shadow: 0 0 1px #dddddd, 0 0 2px #dddddd;"><i class="fas fa-fire"></i> DroughtXplore</h1>
+
+            <p>Comprendre, prévenir et agir avec les technologies modernes</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/analyze">Traitement d'image</a>
+        <a href="/about">Qui sommes-nous</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2><i class="fas fa-water"></i> Définition</h2>
+            <p>La sécheresse est un phénomène climatique qui se caractérise par des niveaux anormalement bas d’eau dans les sols, les cours d’eau, les lacs et les nappes phréatiques.
+
+La sécheresse est généralement provoquée par la conjonction de plusieurs facteurs : une diminution importante des précipitations et des apports d’eau dans un écosystème sur une période prolongée, parfois combinée à évaporation excessive due à des températures élevées et une faible humidité. La sécheresse peut être aggravée par d’autres problèmes écologiques comme l’artificialisation des sols.
+
+La sécheresse est un problème écosystémique important, qui a conséquences négatives sur le fonctionnement des milieux naturels et sur les activités des sociétés humaines. En effet, en période de sécheresse, les espèces vivantes et la biodiversité sont affectées et fragilisées. Des secteurs comme l’agriculture ou la production énergétique sont également menacés par les épisodes de sécheresse. À l’extrême, le manque d’eau peut s’avérer extrêmement dangereux pour la santé des populations et le fonctionnement des systèmes économiques et sociaux humains.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-exclamation-triangle"></i> Causes</h2>
+            <ul>
+            <p>La sécheresse peut résulter d’un manque de pluie, quand la quantité d’eau est nettement inférieure aux normales saisonnières sur une période prolongée. Les épisodes de sécheresse peuvent être aussi le résultat d’une utilisation trop intensive ou inadaptée de l’eau disponible.
+
+On distingue ainsi trois grands types de sécheresses :
+                <li>La sécheresse météorologique provoquée par un manque de pluie ;</li>
+                <li>La sécheresse agricole causée par un manque d’eau dans les sols et qui nuit au développement de la végétation ;</li>
+                <li>La sécheresse hydrologique lorsque les lacs, rivières, cours d’eau ou nappes souterraines ont des niveaux anormalement bas.</li>
+                <p>Avec le changement climatique, les sécheresses seront de plus en plus récurrentes.
+            </ul>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-chart-line"></i> La sécheresse au Maroc</h2>
+            <p>En 2024, le Maroc a connu une sixième année consécutive de sécheresse, avec des précipitations déficitaires et des niveaux de remplissage des barrages alarmants. La situation a un impact significatif sur l'agriculture et l'approvisionnement en eau.
+           <li><b>Situation des barrages:</b></li>
+                       <p>Le taux de remplissage des barrages était très bas en 2024, avec seulement 26% atteint au 21 mars, contre 34% l'année précédente.
+           <li><b>Impact sur l'agriculture:</b></li>
+                       <p>La sécheresse a entraîné une réduction de la production céréalière nationale de 42% lors de la campagne 2023/2024, la faisant chuter à 3,3 millions de tonnes, selon l'Agence Ecofin. 
+           <li><b>Stress hydrique:</b></li>
+                       <p>Le Maroc est en situation de stress hydrique structurel, avec un risque de pénurie d'eau. La dotation annuelle en eau par habitant est inférieure à 600 m3, soit quatre fois moins qu'il y a 60 ans, selon la Banque africaine de développement. 
+
+           <li><b>Coupures d'eau:</b></li>
+                       <p>La sécheresse a conduit à des coupures d'eau dans certaines villes, comme à Béni Mellal en août, où l'eau a été coupée pendant   trois jours. 
+    
+ </p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-leaf"></i> Comment agir contre la sechresse?</h2>
+           <p>
+             <li> Réduire notre consommation d’eau au quotidien (toilettes, arrosage, vaisselle, douche)</li>
+             <li> Recycler et réutiliser l’eau autant que possible.</li>
+             <li>Privilégier les cultures économes en eau.</li>
+             <li>Préserver les forêts, zones humides et nappes phréatiques.</li>
+             <li>Soutenir les projets d’irrigation durable et de gestion intelligente des ressources.</li>
+
+
+
+</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-satellite"></i> Utilisation des images satellites</h2>
+            <p>Les images satellites aident à repérer les zones les plus touchées par la sécheresse en analysant les indices de végétation.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-envelope"></i> Contact : contact.droughtXplore@gmail.com | © 2025 DroughtXplore</p>
+    </footer>
+</body>
+</html>

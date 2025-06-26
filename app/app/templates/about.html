@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Qui sommes-nous - DroughtXplore</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="image-header">
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 10;
+    margin: 0;
+    padding: 0;">
+
+        <div class="overlay">
+            <h1 style="color: #4d724d; text-shadow: 0 0 1px #dddddd, 0 0 2px #dddddd;"><i class="fas fa-fire"></i> Qui sommes-nous?</h1>
+ 
+            <p>L’équipe derrière le projet DroughtXplore</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/analyze">Traitement d'image</a>
+        <a href="/about">Qui sommes-nous</a>
+    </nav>
+
+    <main>
+        <section>
+<section class="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+        Nous sommes un groupe d’étudiantes du Master de Science et Technologie de l’Espace au <strong>CRASTE-LF</strong>. Ce projet a été réalisé dans le cadre du module de Traitement des images, encadré par notre professeur <strong>Omar Soufi</strong>.
+
+    </p>
+
+    <p>À travers ce travail, nous avons appliqué des techniques de traitement d’images assistées par l’intelligence artificielle pour analyser des données satellites, dans le but d’évaluer les effets de la sécheresse. Ce projet nous a permis de mobiliser nos compétences en télédétection,et apprentissage automatique, tout en répondant à une problématique environnementale concrète.</p>
+
+    <h3>Les membres de l’équipe :</h3>
+    <ul>
+        <li><strong>Amina Ouzoho</strong> – Option : Météorologie par satellite et climat mondial(MSCM)</li>
+        <li><strong>Elmaghnouji Fatima Zahra</strong> – Option : Météorologie par satellite et climat mondial(MSCM)</li>
+        <li><strong>Boutaleb Nisrine</strong> – Option : Météorologie par satellite et climat mondial(MSCM)</li>
+        <li><strong>Elyoussoufi Nezha</strong> – Option : Télédétection et Systèmes d’Information Géographique (T&SIG)</li>
+    </ul>
+
+    <p>
+        Ce site a été développé comme une démonstration pratique de nos compétences en traitement d’images satellites, et en modélisation de phénomènes environnementaux.
+    </p>
+</section>    </main>
+
+    <footer>
+        <p><i class="fas fa-envelope"></i> Contact : contact.droughtXplore@gmail.com | © 2025 DroughtXplore</p>
+    </footer>
+</body>
+</html>
